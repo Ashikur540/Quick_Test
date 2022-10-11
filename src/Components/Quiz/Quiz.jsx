@@ -12,7 +12,7 @@ const Quiz = () => {
             <h1 className="text-md text-slate-600"> total -{total}</h1>
             <div className="container mx-auto">
                 {
-                    questions.map(Singlequestion => <QuestionCard Singlequestion={Singlequestion}></QuestionCard>)
+                    questions.map(Singlequestion => <QuestionCard key={Singlequestion.id} Singlequestion={Singlequestion}></QuestionCard>)
                 }
             </div>
         </div>
