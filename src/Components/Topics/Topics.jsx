@@ -11,7 +11,7 @@ const Topics = () => {
             <Header></Header>
 
             <h1 className="text-3xl font-semibold text-sky-500">Explore our Topics</h1>
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-20 mx-auto items-center">
+            <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 px-20 mx-auto items-center">
                 {
                     topicsData.map(topic => <TopicCard
                         key={topic.id}

@@ -51,7 +51,7 @@ const QuestionCard = ({ Singlequestion }) => {
 
     // show answer
     const showAnswer = (ans) => {
-        toast.info(ans, {
+        toast.info("Answer:", ans, {
             position: "top-center",
             autoClose: 5000,
             hideProgressBar: false,
@@ -70,8 +70,6 @@ const QuestionCard = ({ Singlequestion }) => {
             <div className="p-2 flex justify-between items-center">
                 <h1 className='text-xl font-semibold my-8'>{question} ?</h1>
                 <label htmlFor="my-modal-4" className="cursor-pointer" >  <MdVisibility htmlFor="my-modal-4" className='text-3xl cursor-pointer' onClick={() => showAnswer(correctAnswer)} /></label>
-
-
             </div>
             {
                 options.map(option => {
