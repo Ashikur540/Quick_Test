@@ -8,7 +8,7 @@ const Header = () => {
                     <div className="hero-overlay bg-opacity-60 rounded-2xl"></div>
                     <div className="hero-content text-center text-neutral-content">
                         <div className="max-w-md">
-                            <h1 className="mb-5 text-5xl font-bold text-white">WELCOME TO QUIZZLY 🤗</h1>
+                            <h1 className="mb-5 text-5xl font-bold text-white">WELCOME TO Quick_Test 🤗</h1>
                             <p className="mb-5 text-slate-300">Lavel up your technical skills by our quizes..<br></br>
                                 So lets check your lavel!!😉😀
                             </p>
