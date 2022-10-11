@@ -10,7 +10,7 @@ const TopicCard = ({ topic }) => {
                 <figure><img src={logo} alt="logo" className="w-60" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>
-                    <p className="text-left">Question: {total}</p>
+                    <p className="text-left">Questions: {total}</p>
                     <div className="card-actions justify-end">
                         <Link to={`/topics/${id}`}><button className="btn btn-primary pl-4" >Start practice <MdArrowRightAlt className="text-2xl ml-2" /></button></Link>
                     </div>
