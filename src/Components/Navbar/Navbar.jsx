@@ -1,12 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
         <div>
             <div className="navbar bg-base-100">
                 <div className="flex-1">
-                    <a href className="btn btn-ghost normal-case text-xl text-violet-600">QuizZly !</a>
+                    <Link to='/' href className="btn btn-ghost normal-case text-xl text-violet-600">QuizZly !</Link>
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal p-0">
