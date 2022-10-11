@@ -6,6 +6,12 @@ const QuestionCard = ({ Singlequestion }) => {
     const { question, options, id, correctAnswer } = Singlequestion;
 
 
+    const ValidateAnswer = (ans) => {
+        // console.log(ans);
+        if (ans === correctAnswer) alert("your answer is correct");
+        else alert("incorrect!!")
+    }
+
 
     return (
         <div className="bg-white my-4 max-w-lg mx-auto px-8 py-4 rounded-xl shadow-lg">
