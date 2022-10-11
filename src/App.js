@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import './App.css';
 import Blogs from './Components/Blogs/Blogs';
 import ErrorPage from './Components/ErrorPage';
@@ -51,6 +52,7 @@ function App() {
   return (
     <div className="App">
       <RouterProvider router={router}></RouterProvider>
+      <ToastContainer />
     </div>
   );
 }

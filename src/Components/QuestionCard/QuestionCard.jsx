@@ -1,4 +1,6 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const QuestionCard = ({ Singlequestion }) => {
 
@@ -8,8 +10,41 @@ const QuestionCard = ({ Singlequestion }) => {
 
     const ValidateAnswer = (ans) => {
         // console.log(ans);
-        if (ans === correctAnswer) alert("your answer is correct");
-        else alert("incorrect!!")
+        if (ans === correctAnswer) toast.success(' Correct answer wow 😲', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
+        else {
+            toast.error('!!Worng answer !! 🥱', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
+        }
+
+
+        < ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored" />
     }
 
 
