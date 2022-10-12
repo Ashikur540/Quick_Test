@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# Quick_Test App
+
+This is a single page web application developed By <i>Ashikur Rahman </i>
+#Technologies used:
+
+<ul>
+
+<li><a href="https://create-react-app.dev/">React</a></li>
+<li><a href="https://reactrouter.com/en/main">React Router</a></li>
+<li><a href="https://tailwindcss.com/">Tailwind</a></li>
+</ul>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
