@@ -13,11 +13,13 @@ const Navbar = () => {
                         <li><NavLink to="/topics">Topics</NavLink></li>
                         <li><NavLink to="/statistics">Statistics</NavLink></li>
                         <li><NavLink to="/blogs">Blogs</NavLink></li>
+                        <a href="">Quick_Test App</a>
                     </ul>
                 </div>
             </div>
         </div>
     );
 };
+
 
 export default Navbar;
