@@ -39,14 +39,14 @@ function App() {
           errorElement: <ErrorPage></ErrorPage>
         },
 
-
+        {
+          path: "/blogs",
+          element: <Blogs></Blogs>,
+          errorElement: <ErrorPage></ErrorPage>
+        },
       ]
     },
-    {
-      path: "/blogs",
-      element: <Blogs></Blogs>,
-      errorElement: <ErrorPage></ErrorPage>
-    },
+
   ]);
 
   return (
