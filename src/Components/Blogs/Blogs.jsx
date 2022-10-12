@@ -28,8 +28,13 @@ const Blogs = () => {
             <div className="bg-cyan-50 px-6 py-3 text-left max-w-5xl border-4 rounded-lg shadow-lg mx-auto my-10">
                 <h1 className="text-slate-700 font-semibold py-4 text-xl">How does context API works?</h1>
                 <p className="text-slate-600">
-                    The React Context API is a way for a React app to effectively produce global variables that can be passed around.<br />
-                    React.createContext() is all you need. It returns a consumer and a provider. Provider is a component that as it's names suggests provides the state to its children. It will hold the "store" and be the parent of all the components that might need that store. Consumer as it so happens is a component that consumes and uses the state.
+                    The useRef Hook is a function that returns a mutable ref object whose .current property is initialized with the passed argument (initialValue). The returned object will persist for the full lifetime of the component.<br />
+                    There are two main uses of useRef:
+                    <ol className="list-disc">
+                        <li className="ml-7">Accessing the DOM nodes or React elements</li>
+                        <li className="ml-7">Keeping a mutable variable</li>
+
+                    </ol>
                 </p>
             </div>
         </div>
