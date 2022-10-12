@@ -32,6 +32,7 @@ const QuestionCard = ({ Singlequestion, setScore, score }) => {
             });
         }
         else {
+
             toast.error('!!Worng answer !! 🥱', {
                 position: "top-right",
                 autoClose: 5000,
