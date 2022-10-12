@@ -3,8 +3,8 @@ import { MdVisibility } from "react-icons/md";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const QuestionCard = ({ Singlequestion }) => {
-    const [score, setScore] = useState(0);
+const QuestionCard = ({ Singlequestion, setScore, score }) => {
+
     // console.log("this ", question);
     const { question, options, id, correctAnswer } = Singlequestion;
 
@@ -14,11 +14,12 @@ const QuestionCard = ({ Singlequestion }) => {
 
         if (ans === correctAnswer) {
 
+            let newScore = score + 1;
+            setScore(newScore);
 
-
-            let newscore = score + 1;
-            setScore(newscore);
-            console.log(score);
+            // let newscore = score + 1;
+            // setScore(newscore);
+            // console.log(score);
             toast.success(' Correct answer wow 😲', {
                 position: "top-right",
                 autoClose: 5000,
