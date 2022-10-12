@@ -26,7 +26,7 @@ const Blogs = () => {
                 </p>
             </div>
             <div className="bg-cyan-50 px-6 py-3 text-left max-w-5xl border-4 rounded-lg shadow-lg mx-auto my-10">
-                <h1 className="text-slate-700 font-semibold py-4 text-xl">How does context API works?</h1>
+                <h1 className="text-slate-700 font-semibold py-4 text-xl">What is useref Discuss briefly?</h1>
                 <p className="text-slate-600">
                     The useRef Hook is a function that returns a mutable ref object whose .current property is initialized with the passed argument (initialValue). The returned object will persist for the full lifetime of the component.<br />
                     There are two main uses of useRef:

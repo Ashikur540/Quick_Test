@@ -12,12 +12,14 @@ This is a single page web application developed By <i>Ashikur Rahman </i>
 
 # 💡Features:
 
+<ul>
 <li>Choose Differnt categories</li>
 <li>Dynamic routing and no apge refresh</li>
 <li>Valiadte your answer</li>
 <li>See write and wrong answer instantly</li>
 <li>Get performence Score</li>
 <li>fast!</li>
+</ul>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
