@@ -1,26 +1,35 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { MdVisibility } from "react-icons/md";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const QuestionCard = ({ Singlequestion }) => {
-
+    const [score, setScore] = useState(0);
     // console.log("this ", question);
     const { question, options, id, correctAnswer } = Singlequestion;
 
 
     const ValidateAnswer = (ans) => {
         // console.log(ans);
-        if (ans === correctAnswer) toast.success(' Correct answer wow 😲', {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "colored",
-        });
+
+        if (ans === correctAnswer) {
+
+
+
+            let newscore = score + 1;
+            setScore(newscore);
+            console.log(score);
+            toast.success(' Correct answer wow 😲', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+            });
+        }
         else {
             toast.error('!!Worng answer !! 🥱', {
                 position: "top-right",
@@ -66,7 +75,7 @@ const QuestionCard = ({ Singlequestion }) => {
     }
 
     return (
-        <div className="bg-white my-4 max-w-lg mx-auto px-8 py-4 rounded-xl shadow-lg">
+        <div className="bg-cyan-50 my-4 max-w-lg mx-auto px-8 py-4 rounded-xl shadow-lg">
 
             <div className="p-2 flex justify-between items-center">
                 <h1 className='text-xl font-semibold my-8'>{question} ?</h1>
@@ -75,7 +84,7 @@ const QuestionCard = ({ Singlequestion }) => {
             {
                 options.map(option => {
                     return (
-                        <div className="border p-4 cursor-pointer hover:bg-slate-200 my-2 rounded-md" onClick={() => ValidateAnswer(option)}>
+                        <div className="border p-4 cursor-pointer hover:bg-indigo-200 my-2 rounded-md" onClick={() => ValidateAnswer(option)}>
                             <p className='text-medium'>{option}</p>
                         </div>
                     )
